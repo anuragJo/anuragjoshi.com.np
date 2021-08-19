@@ -6,39 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anurag Joshi</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <hr>
       <div class="row">
-        <div class="col-6">
+        <div class="col">
           <h1>Anurag Joshi</h1>
         </div>
-        <div class="col-6">
-          <p class="text-right"><a href="quiz.html">Quiz</a> | <a href="">Download my Resume</a></p>
+        <div class="col">
+			
+          <div class="text-end"><a href="quiz.html">Quiz</a> |
+			  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Save Resume</a>
+			 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   			 <a class="dropdown-item" href="files/Resume.pdf">As .pdf</a>
+    		<a class="dropdown-item" href="files/Resume.docx">As .docx</a>
+			</div>
+			</div>
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-md-8 col-sm-12">
-          <div class="media">
-            <img class="mr-3" size="300x300" src="images/Portfolio.jpg" alt="Portfolio Image">
-            <div class="media-body">
-              <h3 class="mt-0">Civil Engineer</h3>
-I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College of Information Technology, Balkumari) looking for an environment where i can further develop my engineering skills as well as provide valuable services to the community and the industry.</div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="row justify-content-md-around m-1">
-            <address>
+		  <div class="col-md-7 col-sm-12 me-auto">
+			  <div class="clearfix">
+  					<img src="images/Portfolio.jpg" class="col-md-6 float-md-start mb-3 me-md-3" alt="Portfolio Image">
+				  	<h3>Civil Engineer</h3>
+					<p>I am   fresh Civil Engineering Graduate from Pokhara 
+						University (Nepal College of Information Technology, 
+						Balkumari) looking for an environment where i can further
+						develop my engineering skills as well as provide valuable
+						services to the community and the industry.</p>
+ 			 </div>
+			  
+		  </div>
+        <div class="col-md-3 col sm-12 text-end">
+            <address class="align-end">
               <strong>Anurag Joshi</strong><br>
               Dhangadhi-8,Kailali  <br>
               Sudurpaschim Pradesh, Nepal  <br>
               <abbr title="Phone">P:</abbr> (+977) 9848606672<br>
               <a href="mailto:#">ar_joshi@hotmail.com</a>
             </address>
-          </div>
         </div>
       </div>
       <hr>
@@ -51,7 +60,7 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
               <h4>Galaxy Public School</h4>
             </div>
           </div>
-          <h5><span class="badge badge-secondary">SLC</span> <span class="badge badge-secondary">83%</span></h5>
+          <h5><span class="badge bg-primary">SLC</span> <span class="badge bg-primary">83%</span></h5>
           <p>I was an above average student during my school days. I managed to secure a distinction grade during my SLC (83%)</p>
 			<br>
           <div class="row">
@@ -59,7 +68,7 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
               <h4>Goldengate Higher Secondary School</h4>
             </div>
           </div>
-          <h5><span class="badge badge-secondary">+2 Science</span> <span class="badge badge-secondary">75%</span></h5>
+          <h5><span class="badge bg-primary">+2 Science</span> <span class="badge bg-primary">75%</span></h5>
           <p>I enrolled in my higher secondary School at Goldengate International College situated at Battishputali, Kathmandu as a science student. I also managed to secure a distinction grade during my high school (75%).</p>
 			<br>
 		  <div class="row">
@@ -67,50 +76,51 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
               <h4>Nepal College of Information Technology</h4>
             </div>
           </div>
-          <h5><span class="badge badge-secondary">Bachelors - Civil</span> <span class="badge badge-secondary">3.9 GPA</span></h5>
+          <h5><span class="badge bg-primary">Bachelors - Civil</span> <span class="badge bg-primary">3.9 GPA</span></h5>
           <p>I enrolled at the Nepal College of Information Technology, Balkumari choosing Civil Engineering as a professional course. The great scholarly environment at the college helped me kindle my passion for the subject. I was top of my class and managed to secure a 3.9 GPA. </p>
         </div>
         <div class="col-md-6 col-sm-12">
           <h2>Skill Set</h2>
           <hr>
 			<h4>Basic Skills</h4>
-          <div class="progress mt-4">
+			
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> Surveying & Field Work</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> Survey Data Interpretation & Desk Work</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> Contour Mapping</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%"> Structural Analysis</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%"> Structural Designing</div>
           </div>
 			
 			<hr>
 			<h4>Computer Software Skills</h4>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> SketchUp</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> AutoCAD</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> Office Suites</div>
           </div>
-			<div class="progress mt-4">
+			<div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> Softwell SW Road</div>
           </div>
-			<div class="progress mt-4">
+			<div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 68%"> AutoCAD Civil 3D</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> CSI ETABS</div>
           </div>
-          <div class="progress mt-4">
+          <div class="progress mt-4" style="height: 25px;">
             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%"> CSI SAP</div>
           </div>
           
@@ -122,14 +132,14 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <div class="row">
-            <div class="col-7">
+            <div class="col me-auto">
               <h4>Final Year Project</h4>
             </div>
-            <div class="col-4">
-              <h5 class="text-right"><span aria-hidden="true"></span> Dec 2020</h5>
+            <div class="col">
+              <h5 class="text-end">Dec 2020</h5>
             </div>
           </div>
-          <h5><span class="badge badge-secondary">Road Design and Estimation</span></h5>
+          <h5><span class="badge bg-primary">Road Design and Estimation</span></h5>
           <p>Detailed Engineering Design and Cost Estimate for Upgrading Manebhanjyang-Rishimode Road, Suryodaya Municipality, Ilam, Nepal. Key Skills gained were:</p>
           <ul>
             <li>Road Design in extremly difficult hilly terrain.</li>
@@ -139,14 +149,14 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="row">
-            <div class="col-7">
+            <div class="col me-auto">
               <h4>Survey Camp</h4>
             </div>
-            <div class="col-4">
-              <h5 class="text-right"><span aria-hidden="true"></span> Aug 2019</h5>
+            <div class="col">
+              <h5 class="text-end">Aug 2019</h5>
             </div>
           </div>
-          <h5><span class="badge badge-secondary">Survey Camp - 10 days&nbsp;&nbsp;</span></h5>
+          <h5><span class="badge bg-primary">Survey Camp - 10 days</span></h5>
           <p>Participated in 10 day long Survey Camp organized by Nepal College of Information Technology as a mandatory part of Curriculum of the University. Key skilled acquired were:</p>
           <ul>
             <li>Topographic surveying and contouring.</li>
@@ -159,14 +169,14 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
 		 <div class="row">
         <div class="col-md-6 col-sm-12">
           <div class="row">
-            <div class="col-7">
+            <div class="col me-auto">
               <h4>Geology Field Visit</h4>
             </div>
-            <div class="col-4">
-              <h5 class="text-right"><span aria-hidden="true"></span> Mar 2018</h5>
+            <div class="col">
+              <h5 class="text-end">Mar 2018</h5>
             </div>
           </div>
-          <h5><span class="badge badge-secondary">Geological Site Exploration</span></h5>
+          <h5><span class="badge bg-primary">Geological Site Exploration</span></h5>
           <p>Participated in a 3 day long geology site visit organized by Nepal College of Information Technology as a part of cirriculum offered by the Pokhara University. Key skills gained were:</p>
           <ul>
             <li>Identification and classification of geological formations.</li>
@@ -176,14 +186,14 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="row">
-            <div class="col-7">
+            <div class="col me-auto">
               <h4>Project II</h4>
             </div>
-            <div class="col-4">
-              <h5 class="text-right"><span aria-hidden="true"></span> Feb 2019</h5>
+            <div class="col">
+              <h5 class="text-end">Feb 2019</h5>
             </div>
           </div>
-          <h5><span class="badge badge-secondary">Minor Project</span></h5>
+          <h5><span class="badge bg-primary">Minor Project</span></h5>
           <p>Successfully completed Project - II consisting of the following:</p>
           <ul>
             <li>Building Project: First measuring and then Modelling an Existing Building (Block-B, NCIT College) in AutoCAD.</li>
@@ -197,7 +207,7 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
       <h2>Portfolio</h2>
       <hr>
       <div class="container">
-        <div class="row text-center">
+        <div class="row">
           <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/Award 300x200.jpg" alt=""></div>
           <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/Award 2 300x200.jpg" alt=""></div>
           <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/Talk 300x200.jpg" alt=""></div>
@@ -208,23 +218,23 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
       <hr>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8  col-12 jumbotron">
+          <div class="col-lg-8  col-12">
             <form>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
               </div>
-              <div class="form-group">
-                <label for="email">E-Mail</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+              <div class="mb-3">
+                <label for="email" class="form-label">E-Mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" aria-describedby="emailHelp">
                 <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
               </div>
-              <div class="form-group">
+              <div class="mb-3">
                 <label for="message">Message</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message..." aria-describedby="messageHelp"></textarea>
                 <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
               </div>
-              <div class="text-center">
+              <div class="text-center mb-3">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
@@ -241,10 +251,7 @@ I am   fresh Civil Engineering Graduate from Pokhara University (Nepal College o
         </div>
       </footer>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
