@@ -16,7 +16,7 @@
   </head>
   <body>
  
-<div class="comtainer-fluid">
+<div class="comtainer-fluid" id=login>
   
    <label for="email">Email:</label>
   <input type="email" name="email" id="email">
@@ -26,6 +26,10 @@
   
   
 </div>
+	  <div class="container-fluid" id="logedIn" style="display: none;">
+	  <a type="button" onClick="logOut()" id="showInfo">empty</a>
+	  
+	  </div>
 	<!-- needed for bootstrap -->
     <script src="js/bootstrap/bootstrap.bundle.js"></script>
 	  
@@ -34,7 +38,8 @@
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+	
+	  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
 	  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
 
 <script>
@@ -42,7 +47,7 @@
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
     apiKey: "AIzaSyBARGMaLEXgTkYW_WMtwBI4UXBhQi_p2xs",
-    authDomain: "anuragjoshi.com.np",
+    authDomain: "quizbull.firebaseapp.com",
     projectId: "quizbull",
     storageBucket: "quizbull.appspot.com",
     messagingSenderId: "839759877408",
@@ -51,7 +56,6 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 </script>
 	  <script src="js/app.js"></script>
 </body>
