@@ -28,19 +28,18 @@
       </div>
       <hr>
       <div class="row">
-		  <div class="col-md-9 col-sm-12 me-auto ">
-			  <div class="clearfix">
-  					<img src="images/Portfolio_thumb.jpg" class="float-start mb-4 me-4" alt="Portfolio Image">
-				  	<h3>Civil Engineer</h3>
-					<p>I am   fresh Civil Engineering Graduate from Pokhara 
+		  <div class="col-md-8 col-12 me-md-auto">
+			  
+				  <img style="float:left; width:50%; height:auto; margin-right:10px;" src="images/Portfolio.jpg"/>
+  					<h4>Civil Engineer</h4>
+				  <p>I am fresh Civil Engineering Graduate from Pokhara 
 						University (Nepal College of Information Technology, 
 						Balkumari) looking for an environment where i can further
 						develop my engineering skills as well as provide valuable
 						services to the community and the industry.</p>
- 			 </div>
-			  
+			  				
 		  </div>
-        <div class="col-md-3 col-sm-12 text-end">
+        <div class="col-md-3 col-12 text-end">
             <address class="align-end">
               <strong>Anurag Joshi</strong><br>
               Dhangadhi-8,Kailali  <br>
@@ -206,13 +205,32 @@
       <hr>
       <h2>Portfolio</h2>
       <hr>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/Award 300x200.jpg" alt=""></div>
-          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/Award 2 300x200.jpg" alt=""></div>
-          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/Talk 300x200.jpg" alt=""></div>
-        </div>
-      </div>
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Award 300x200.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Award 2 300x200.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Talk 300x200.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
       <hr>
       <h2>Contact</h2>
       <hr>
