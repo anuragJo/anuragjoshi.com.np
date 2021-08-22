@@ -80,7 +80,7 @@ function previous(){
 	clearCard();
 	QN--;
 	
-db.collection("Engineering").doc("Civil Engineering").collection("Structural Analysis").doc(String(QN)).get().then((doc) => {
+db.collection("Management").doc("BBA").collection("Economics").doc(String(QN)).get().then((doc) => {
     if (doc.exists) {
         console.log("Document data:", doc.data());
 		
