@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign In</title>
+	
+		  <link rel="stylesheet" href="intlTelInfo/css/intlTelInput.css"/>
+	
+  		<script src="intlTelInfo/js/intlTelInput.js"></script>
+	
+	<link href="css/bootstrap.css" rel="stylesheet">
+	
+	
+</head>
+
+<body class="bg-primary">
+		<div class="container">
+			
+            <div class="col-10 col-md-4 position-absolute top-50 start-50 translate-middle shadow bg-light rounded">
+				<div id="progress" class="progress-bar bg-success mt-0 mb-0" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:0%; height:2px;z-index: 10;"></div>
+                <div class="login-form bg-light p-4 rounded">
+										
+                    <form class="row g-3" onsubmit="signIn(event)">
+                        <h4>Welcome Back !</h4>
+						
+                        <div class="col-12">
+                                 <label for="userName" class="form-label" >Mobile No.</label>	
+    							<input class="form-control" id="userName" name="userName"  type="number" placeholder="Mobile" onChange="validate(this)" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10">
+   								 <div id="userValid" class="valid-feedback">
+    							  Looks good!
+   								 </div>
+								<div id="userInvalid" class="invalid-feedback">
+       							 Please provide a valid Mobile number.
+     							 </div>
+								<div id="userNotFound" class="invalid-feedback">
+       							 This mobile number is not registered. <a href="quiz_signUp.html">Sign Up??</a>
+     							 </div>
+                        </div>
+                        <div class="col-12">
+                            <label>Password</label>
+                            <input id="password" type="password" name="password" class="form-control" placeholder="Password" minlength="6">
+							<div id="passInvalid" class="invalid-feedback">
+       							 Password Invalid. Click forgot Password to reset.
+     						</div>
+                        </div>
+   
+                        <div class="col-12 text-center mt-5">
+                            <button type="submit" class="btn btn-primary ">Login</button>
+                        </div>
+                    </form>
+                    <hr class="mt-4">
+					 <div class="col-12">
+                        <p class="text-center mb-0">Donot have an account yet?  <a href="quiz_signUp.html"> SignUp</a></p>
+						 <p class="text-center mb-0"><a href="resetPassword.html"> Forgot Password?</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+	<script src="js/bootstrap/bootstrap.bundle.js"></script>
+	
+	 <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	
+	  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBARGMaLEXgTkYW_WMtwBI4UXBhQi_p2xs",
+    authDomain: "quizbull.firebaseapp.com",
+    projectId: "quizbull",
+    storageBucket: "quizbull.appspot.com",
+    messagingSenderId: "839759877408",
+    appId: "1:839759877408:web:985b6a7fb5db1f9c93b345",
+    measurementId: "G-8KYYL93NLK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+	
+		
+<script src="js/quiz_signIn.js"></script>
+		
+</body>
+</html>

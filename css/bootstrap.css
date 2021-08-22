@@ -1,3 +1,65 @@
+.left-border-red{
+	border-left: 10px solid red !important;
+}
+
+
+.left-border-green{
+	border-left: 10px solid green !important;
+}
+
+.left-border-purple{
+	border-left: 10px solid purple !important;
+}
+
+
+
+
+.modal-header-my {
+  display:inline-block;
+  padding: 1rem 2rem 0rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-title-my {
+  display: block;
+}
+
+
+.mySidebar{
+	position:fixed!important;
+	width: 30%!important;
+	height: 100%!important;
+	top: 0!important;
+	left: 0!important;
+}
+
+.myMainDiv{
+	margin-left: 30%!important;
+		
+}
+.userUtil{
+	text-align:end !important;
+}
+
+a { 
+	text-decoration: none!important;
+}
+
+
+.intl-tel-input {
+	display: block !important;
+}
+
+.alert {
+  margin-bottom: 1px!important;
+  height: 30px!important;
+  line-height:30px!important;
+  padding:0px 15px!important;
+}
+
+
 @charset "UTF-8";
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
