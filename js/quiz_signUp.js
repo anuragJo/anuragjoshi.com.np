@@ -34,9 +34,10 @@ firebase.auth().fetchSignInMethodsForEmail(phoneNumber.slice(1)+"@anuragjoshi.co
 			{
 		errorDiag.style.display = "block";
 		errorDiag.innerHTML='User already exists. Please <a style="text-decoration: none;" href="quiz_signIn.html">Sign In.</a>';
-			
+			colsole.log("User Already exists");
 				
 			}else{
+				colsole.log("User Doesnot exist");
 				
 	
 window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
@@ -47,11 +48,19 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
 	  infor.style.display = "none";	  
 	  errorDiag.style.display="none";
 	  
+	  colsole.log("captcha solved");
+	  
+	  
+	  
 	  const appVerifier = window.recaptchaVerifier;
 	  firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
     .then((confirmationResult) => {
       // SMS sent. Prompt user to type the code from the message, then sign the
       // user in with confirmationResult.confirm(code).
+		  
+		  
+		  colsole.log("SMS sent");
+		  
 		infor.style.display = "none";	  
 	  errorDiag.style.display="none";
 		  
@@ -65,12 +74,14 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
 		  }
 		  
 		  
-		
+		colsole.log("modal shown");
     	myModal.show();
       // ...
     }).catch((error) => {
       // Error; SMS not sent
       // ...
+		  console.log(error);
+		  errorDiag.style.display="block";
 		  errorDiag.style.display="Error: SMS not sent";
 		  errorDiag.innerHTML=error;
     });
