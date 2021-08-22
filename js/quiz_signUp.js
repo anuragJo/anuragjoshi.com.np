@@ -108,6 +108,7 @@ infor.innerHTML="Please verify the Captcha below."
 		}).catch((error) => {
   // User not found!!!)
   // ...
+		console.log(error);
 		errorDiag.style.display = "block";
 		errorDiag.innerHTML='Error: Something unexpected happened.';
 			
