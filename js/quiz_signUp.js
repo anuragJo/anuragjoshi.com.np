@@ -34,10 +34,10 @@ firebase.auth().fetchSignInMethodsForEmail(phoneNumber.slice(1)+"@anuragjoshi.co
 			{
 		errorDiag.style.display = "block";
 		errorDiag.innerHTML='User already exists. Please <a style="text-decoration: none;" href="quiz_signIn.html">Sign In.</a>';
-			colsole.log("User Already exists");
+			console.log("User Already exists");
 				
 			}else{
-				colsole.log("User Doesnot exist");
+				console.log("User Doesnot exist");
 				
 	
 window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
@@ -48,7 +48,7 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
 	  infor.style.display = "none";	  
 	  errorDiag.style.display="none";
 	  
-	  colsole.log("captcha solved");
+	  console.log("captcha solved");
 	  
 	  
 	  
@@ -59,7 +59,7 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
       // user in with confirmationResult.confirm(code).
 		  
 		  
-		  colsole.log("SMS sent");
+		  console.log("SMS sent");
 		  
 		infor.style.display = "none";	  
 	  errorDiag.style.display="none";
@@ -74,7 +74,7 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
 		  }
 		  
 		  
-		colsole.log("modal shown");
+		console.log("modal shown");
     	myModal.show();
       // ...
     }).catch((error) => {
@@ -108,6 +108,8 @@ infor.innerHTML="Please verify the Captcha below."
 		}).catch((error) => {
   // User not found!!!)
   // ...
+	
+	
 		console.log(error);
 		errorDiag.style.display = "block";
 		errorDiag.innerHTML='Error: Something unexpected happened.';
