@@ -1,15 +1,15 @@
 
 .left-border-red{
-	border-left: 30px solid red !important;
+	border-left: 10px solid red !important;
 }
 
 
 .left-border-green{
-	border-left: 30px solid green !important;
+	border-left: 10px solid green !important;
 }
 
 .left-border-purple{
-	border-left: 30px solid purple !important;
+	border-left: 10px solid purple !important;
 }
 
 
@@ -4713,7 +4713,7 @@ textarea.form-control-lg {
   z-index: 3;
   border-color: #86b7fe;
   outline: 0;
-  box-shadow: none;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
 .accordion-header {
