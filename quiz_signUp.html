@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -120,4 +121,128 @@
 </script>
 	  <script src="js/quiz_signUp.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+   
+	  <!-- Bootstrap -->
+    
+	  <link href="css/bootstrap.css" rel="stylesheet">
+	 
+  
+	   <!-- International Tel Input -->
+	  <link rel="stylesheet" href="intlTelInfo/css/intlTelInput.css"/>
+  		<script src="intlTelInfo/js/intlTelInput.js"></script>
+	  
+  </head>
+  <body class="bg-primary">
+	  
+	  
+	  
+	  <div class="container position-absolute top-50 start-50 translate-middle">
+		  
+            <div class="col-10 col-md-3 position-absolute top-50 start-50 translate-middle shadow bg-white rounded">
+				<div id="progress" class="progress-bar bg-success mt-0 mb-0" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:0%; height:2px;"></div>
+                <div class="login-form bg-white  p-4 rounded">
+										
+                    <form class="row" id="loginPhone" onsubmit="phoneSubmit(event)">
+                        <h4>Welcome!!</h4>
+						<p>Please fill the form below to SignUp.<p>
+						<div class="col-12 pb-3">
+                            <label>Full Name</label>
+                            <input id="fullName" type="text" name="fullName" class="form-control" placeholder="Full Name">
+                        </div>
+						
+                        <div class="col-12 pb-3">
+							
+                                 <label for="userName" class="form-label" >Mobile No.</label>	
+    							<input class="form-control" type="number" placeholder="Mobile" onChange="validate(this)" id="phone" name="phone"   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10">
+   								 
+								<div id="userValid" class="valid-feedback">
+    							  Looks good! Standard Rates may apply.
+   								 </div>
+								<div id="userInvalid" class="invalid-feedback">
+       							 Please provide a valid Mobile number.
+     							 </div>
+                        </div>
+                        <div class="col-12 pb-4">
+                            <label>Password</label>
+                            <input id="password" type="password" name="password" class="form-control" placeholder="Create Password" minlength="6">
+                        </div>
+   
+                        <div class="col-12 text-center mb-3">
+                            <button type="submit" class="btn btn-primary ">Sign Up</button>
+                        </div>
+						<div id="info" class="alert alert-info text-center" style="display: none;"></div>
+						<div id="error" class="alert alert-danger text-center" style="display: none;"></div>
+                    </form>
+                    <hr class="mt-3">
+					                    <div class="col-12 text-center">
+                        <div class="text-center" id="recaptcha-container"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+	  
+	  
+	  
+	  
+	  
+	
+	  
+	  
+	  <div class="modal fade" id="otpChallenge" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Enter OTP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+      </div>
+      <div class="modal-body text-center">
+        Please enter the OTP sent to you in your provided phone number.<br><br><br>
+		  <input id="OTP" type="number" oninput="validateOTP(this)" maxlength = "6"><br><br>
+		  <div id="errorModal" class="alert alert-danger" role="alert" style="display: none;">  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="ok" onClick="verifyOTP()" disabled>OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<!-- needed for bootstrap -->
+    <script src="js/bootstrap/bootstrap.bundle.js"></script>
+	  
+	 <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	
+	  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBARGMaLEXgTkYW_WMtwBI4UXBhQi_p2xs",
+    authDomain: "quizbull.firebaseapp.com",
+    projectId: "quizbull",
+    storageBucket: "quizbull.appspot.com",
+    messagingSenderId: "839759877408",
+    appId: "1:839759877408:web:985b6a7fb5db1f9c93b345",
+    measurementId: "G-8KYYL93NLK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+	  <script src="js/quiz_signUp.js"></script>
+</body>
+>>>>>>> 19ec25a8f93b50db14d310f578df35ede2ec8ab9
 </html>
