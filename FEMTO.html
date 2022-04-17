@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <!-- download Zea Engine -- this downloads the latest build from version 3 of the engine -->
+  <script src="https://cdn.jsdelivr.net/npm/@zeainc/zea-engine@3/dist/index.umd.js"></script>
+  <!-- download our stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css" />
+
+  <head>
+    <title>Zea Engine App</title>
+  </head>
+
+  <body class="overflow-hidden">
+    <div class="layout grid h-screen">
+      <main>
+        <!-- HTML Canvas -- what we render to -->
+        <canvas id="canvas"></canvas>
+      </main>
+    </div>
+
+    <!-- Run your code here -->
+    <script type="module">
+      import { main } from './js/index.js'
+      main() // modify this function in main.js
+    </script>
+  </body>
+</html>
