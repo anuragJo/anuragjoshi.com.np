@@ -17,5 +17,5 @@ export function main() {
   camera.setPositionAndTarget(new Vec3(6, 6, 5), new Vec3(0, 0, 1.5))
 
   // create a grid
-  scene.setupGrid(10, 10)
+  scene.setupGrid(100, 100)
 }
