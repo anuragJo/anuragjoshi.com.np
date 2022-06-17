@@ -202,7 +202,6 @@ function checkAns(ans){
 
 
 function start(){
-	
 	card.show();
 	  	next();
 }
